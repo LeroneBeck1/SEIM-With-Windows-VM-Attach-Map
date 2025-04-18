@@ -41,7 +41,7 @@ SecurityEvent
 
 Observing the SecurityEvent logs in the Log Analytics Workspace. At this point there is no location data, only IP address, which we can use to derive the location data.  After some research I imported a spreadsheet (as a “Sentinel Watchlist”) which contains geographic information for each block of IP addresses. I downloaded a file called "geoip-summarized.csv". Within Sentinel, I created the watchlist adding 55,000 locations to match the IP address to.
 
-**geoip-summarized.csv**(https://drive.google.com/file/d/13EfjM_4BohrmaxqXZLB5VUBIz2sv9Siz/view?usp=sharing)
+[**geoip-summarized.csv**](https://drive.google.com/file/d/13EfjM_4BohrmaxqXZLB5VUBIz2sv9Siz/view?usp=sharing)
 <p align="center">
 
 <img src="https://imgur.com/eU9JcRc.jpg" width="650" height="350">
