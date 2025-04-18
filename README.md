@@ -84,7 +84,7 @@ To visualize the gathered data, a custom log was created in Azure to store infor
 
 <p align="center">
 
-<img src="https://imgur.com/9tZxcqn.jpg" width="650" height="300">
+<img src="https://imgur.com/9tZxcqn.jpg">
 
 </p>
 
