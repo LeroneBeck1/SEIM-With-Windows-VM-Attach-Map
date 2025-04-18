@@ -4,7 +4,7 @@
 A Security Information and Event Management (SEIM) solution built on Microsoft Azure to enhance security monitoring and visualize threat origins through geolocation mapping.
 
 ## Overview
-The SEIM project leverages Azure services and custom scripts to monitor, analyze, and visualize security events. It provides insights into potential threats by mapping attack origins on a global scale, making it ideal for cybersecurity enthusiasts and professionals.
+The SEIM project leverages Azure services to monitor, analyze, and visualize security events. It provides insights into potential threats by mapping attack origins on a global scale, making it ideal for cybersecurity enthusiasts and professionals.
 
 ## Key Features
 
