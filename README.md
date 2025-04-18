@@ -23,7 +23,7 @@ The SEIM project leverages Azure services and custom scripts to monitor, analyze
 As part of the testing process, a specific test case was conducted to evaluate the SEIM solution's functionality. By logging into the VM using the public IP address and intentionally entering an incorrect password, the project simulated an unauthorized login attempt. This action triggers the creation of an audit failure log, which captures the IP address of the system attempting to access the VM.
 <p align="center">
 
-<img src="https://imgur.com/a/4wl01gD" width="650" height="350">
+<img src="(https://imgur.com/a/4wl01gD)" width="650" height="350">
 
 </p>
 
