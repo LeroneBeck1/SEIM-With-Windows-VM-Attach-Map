@@ -39,6 +39,18 @@ SecurityEvent
 
 </p>
 
+Observing the SecurityEvent logs in the Log Analytics Workspace. At this point there is no location data, only IP address, which we can use to derive the location data.  After some research I imported a spreadsheet (as a “Sentinel Watchlist”) which contains geographic information for each block of IP addresses. I downloaded a file called "geoip-summarized.csv". Within Sentinel, I created the watchlist adding 55,000 locations to match the IP address to.
+
+Name/Alias: geoip
+Source type: Local File
+Number of lines before row: 0
+Search Key: network
+<p align="center">
+
+<img src="https://imgur.com/eU9JcRc.jpg" width="650" height="350">
+
+</p>
+
 The script utilizes the [IPGeolocation](https://ipgeolocation.io/ "IPGeolocation Homepage") to retrieve latitude, longitude, and general area information associated with the IP address. This geolocation data is then used to plot the attack origins on a world map, providing a visual representation of the security events.
 
 ### Firewall Configuration and Accessibility
