@@ -51,11 +51,17 @@ Observing the SecurityEvent logs in the Log Analytics Workspace. At this point t
 Observe the logs now have geographic information, so you can see where the attacks are coming from.  We can now retrieve latitude, longitude, and general area information associated with the IP address. This geolocation data is then used to plot the attack origins on a world map, providing a visual representation of the security events.
 
 let GeoIPDB_FULL = _GetWatchlist("geoip");
+
 let WindowsEvents = SecurityEvent
+
     | where IpAddress == <attacker IP address>
+    
     | where EventID == 4625
+    
     | order by TimeGenerated desc
+    
     | evaluate ipv4_lookup(GeoIPDB_FULL, IpAddress, network);
+    
 WindowsEvents
 
 ### Firewall Configuration and Accessibility
