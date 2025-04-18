@@ -27,7 +27,16 @@ As part of the testing process, a specific test case was conducted to evaluate t
 
 </p>
 
-To track the location of the attacking system, a PowerShell script was developed (Log_exporter.ps1). The script utilizes the [IPGeolocation](https://ipgeolocation.io/ "IPGeolocation Homepage") to retrieve latitude, longitude, and general area information associated with the IP address. This geolocation data is then used to plot the attack origins on a world map, providing a visual representation of the security events.
+To track the location of the attacking system, I created a Log Analytics Workspace to log the events. From there i created a Mircosoft Sentinel Instance. Configuered a “Windows Security Events via AMA” connector, and created the DCR within Sentinel.
+
+Observe some of your VM logs:
+
+SecurityEvent
+| where EventId == 4625
+
+
+
+The script utilizes the [IPGeolocation](https://ipgeolocation.io/ "IPGeolocation Homepage") to retrieve latitude, longitude, and general area information associated with the IP address. This geolocation data is then used to plot the attack origins on a world map, providing a visual representation of the security events.
 
 ### Firewall Configuration and Accessibility
 During the testing phase, the VM's firewall was temporarily disabled to ensure easy accessibility for testing purposes. It is important to note that this configuration is not recommended for production environments, and proper security measures should be implemented.
