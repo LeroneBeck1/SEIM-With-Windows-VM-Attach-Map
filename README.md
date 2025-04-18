@@ -48,14 +48,22 @@ Observing the SecurityEvent logs in the Log Analytics Workspace. At this point t
 
 </p>
 
-The script utilizes the [IPGeolocation](https://ipgeolocation.io/ "IPGeolocation Homepage") to retrieve latitude, longitude, and general area information associated with the IP address. This geolocation data is then used to plot the attack origins on a world map, providing a visual representation of the security events.
+Observe the logs now have geographic information, so you can see where the attacks are coming from.  We can now retrieve latitude, longitude, and general area information associated with the IP address. This geolocation data is then used to plot the attack origins on a world map, providing a visual representation of the security events.
+
+let GeoIPDB_FULL = _GetWatchlist("geoip");
+let WindowsEvents = SecurityEvent
+    | where IpAddress == <attacker IP address>
+    | where EventID == 4625
+    | order by TimeGenerated desc
+    | evaluate ipv4_lookup(GeoIPDB_FULL, IpAddress, network);
+WindowsEvents
 
 ### Firewall Configuration and Accessibility
 During the testing phase, the VM's firewall was temporarily disabled to ensure easy accessibility for testing purposes. It is important to note that this configuration is not recommended for production environments, and proper security measures should be implemented.
 
 <p align="center">
 
-<img src="https://github.com/meghabyte-og/SEIM/assets/135510418/7a2a069a-3cd3-4c0e-86c2-5ddc2af0d918" width="650" height="350">
+<img src="https://imgur.com/WaYTQsX.jpg" width="650" height="350">
 
 </p>
 
