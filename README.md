@@ -6,6 +6,12 @@ A Security Information and Event Management (SEIM) solution built on Microsoft A
 ## Overview
 The SEIM project leverages Azure services to monitor, analyze, and visualize security events. It provides insights into potential threats by mapping attack origins on a global scale, making it ideal for cybersecurity enthusiasts and professionals.
 
+<p align="center">
+
+<img src="https://imgur.com/Y2OSeNd.jpg">
+
+</p>
+
 ## Key Features
 
 1. **Azure Infrastructure**: Provisions a Virtual Machine (VM) and Resource Group in Azure to support attack simulation and analysis.
