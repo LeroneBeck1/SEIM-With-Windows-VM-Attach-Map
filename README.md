@@ -73,7 +73,7 @@ During the testing phase, the VM's firewall was temporarily disabled to ensure e
 
 </p>
 
-### ### SEIM World Map Visualization and Analysis
+### SEIM World Map Visualization and Analysis
 To visualize the gathered data, a custom log was created in Azure to store information about all failed login attempts to the system. The raw data from the log was extracted and processed to separate the relevant information into individual columns, including latitude and longitude. The Microsoft Sentinel workbook was utilized to present the geolocation data on a world map, providing an intuitive and comprehensive overview of the attacks.
 
 <p align="center">
