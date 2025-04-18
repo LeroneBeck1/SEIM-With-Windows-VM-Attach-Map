@@ -1,4 +1,4 @@
-# SEIM
+# SEIM World Map Visualization
 
 ## SEIM Project Overview
 The SEIM (Security Information and Event Management) project is aimed at enhancing security monitoring and threat detection within a Microsoft Azure environment. By leveraging Azure services and custom scripts, the project enables the visualization and analysis of attacks originating from different geographical locations, providing valuable insights into potential security threats.
