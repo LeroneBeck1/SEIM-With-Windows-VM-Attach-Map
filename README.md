@@ -33,8 +33,11 @@ Observe some of your VM logs:
 
 SecurityEvent
 | where EventId == 4625
+<p align="center">
 
+<img src="https://imgur.com/AMQiDV0.jpg" width="650" height="350">
 
+</p>
 
 The script utilizes the [IPGeolocation](https://ipgeolocation.io/ "IPGeolocation Homepage") to retrieve latitude, longitude, and general area information associated with the IP address. This geolocation data is then used to plot the attack origins on a world map, providing a visual representation of the security events.
 
