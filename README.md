@@ -23,7 +23,7 @@ The SEIM project leverages Azure services to monitor, analyze, and visualize sec
 As part of the testing process, a specific test case was conducted to evaluate the SEIM solution's functionality. By logging into the VM using the public IP address and intentionally entering an incorrect password, the project simulated an unauthorized login attempt. This action triggers the creation of an audit failure log, which captures the IP address of the system attempting to access the VM.
 <p align="center">
 
-<img src="https://imgur.com/qqcC8cz.jpg" width="650" height="350">
+<img src="https://imgur.com/qqcC8cz.jpg">
 
 </p>
 
@@ -35,7 +35,7 @@ SecurityEvent
 | where EventId == 4625
 <p align="center">
 
-<img src="https://imgur.com/AMQiDV0.jpg" width="650" height="350">
+<img src="https://imgur.com/AMQiDV0.jpg">
 
 </p>
 
@@ -44,7 +44,7 @@ Observing the SecurityEvent logs in the Log Analytics Workspace. At this point t
 [**geoip-summarized.csv**](https://drive.google.com/file/d/13EfjM_4BohrmaxqXZLB5VUBIz2sv9Siz/view?usp=sharing)
 <p align="center">
 
-<img src="https://imgur.com/eU9JcRc.jpg" width="650" height="350">
+<img src="https://imgur.com/eU9JcRc.jpg">
 
 </p>
 
@@ -69,16 +69,16 @@ During the testing phase, the VM's firewall was temporarily disabled to ensure e
 
 <p align="center">
 
-<img src="https://imgur.com/WaYTQsX.jpg" width="650" height="350">
+<img src="https://imgur.com/WaYTQsX.jpg">
 
 </p>
 
-### Visualization and Analysis
+### ### SEIM World Map Visualization and Analysis
 To visualize the gathered data, a custom log was created in Azure to store information about all failed login attempts to the system. The raw data from the log was extracted and processed to separate the relevant information into individual columns, including latitude and longitude. The Microsoft Sentinel workbook was utilized to present the geolocation data on a world map, providing an intuitive and comprehensive overview of the attacks.
 
 <p align="center">
 
-<img src="https://imgur.com/uLkkEjo.jpg" width="650" height="300">
+<img src="https://imgur.com/uLkkEjo.jpg">
 
 </p>
 
@@ -89,9 +89,5 @@ To visualize the gathered data, a custom log was created in Azure to store infor
 </p>
 
 
-### SEIM World Map Visualization
-
-The SEIM project is an ongoing endeavor, continuously collecting and analyzing security event data. The information presented in the screenshot provides an initial update.
-![World Map with Attacker Locations](https://github.com/meghabyte-og/SEIM/assets/135510418/347184fd-4a0e-49a1-9762-05cdcaae1f76)
-
+This SEIM project was used as my final project in my Cybersecurity + Op Cohort.  
  <sub>Note: The SEIM project serves educational and testing purposes and should be adapted and deployed with appropriate security considerations for production environments.</sub>
